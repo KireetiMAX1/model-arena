@@ -1,6 +1,6 @@
-# ML Benchmark Suite
+# Model Arena
 
-[![Benchmark Suite](https://github.com/KireetiMAX1/ml-benchmark-suite/actions/workflows/benchmark.yml/badge.svg)](https://github.com/KireetiMAX1/ml-benchmark-suite/actions)
+[![Benchmark Suite](https://github.com/KireetiMAX1/model-arena/actions/workflows/benchmark.yml/badge.svg)](https://github.com/KireetiMAX1/model-arena/actions)
 [![Tests](https://img.shields.io/badge/tests-15%20passing-brightgreen)](tests/)
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -102,8 +102,8 @@ All five are bundled with scikit-learn — zero network calls required in CI:
 
 ### Run locally
 ```bash
-git clone https://github.com/KireetiMAX1/ml-benchmark-suite
-cd ml-benchmark-suite
+git clone https://github.com/KireetiMAX1/model-arena
+cd model-arena
 pip install -r requirements.txt
 
 # Single dataset
@@ -121,7 +121,7 @@ python src/run_benchmark.py --quick
 ## Project Structure
 
 ```
-ml-benchmark-suite/
+model-arena/
 ├── src/
 │   ├── run_benchmark.py    # main orchestrator
 │   ├── data_loader.py      # sklearn dataset loading + standardization
