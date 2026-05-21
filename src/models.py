@@ -47,7 +47,7 @@ def get_classification_models(quick: bool = False) -> dict:
         from lightgbm import LGBMClassifier
         models["LightGBM"] = lambda: LGBMClassifier(
             n_estimators=300, max_depth=6, learning_rate=0.05,
-            random_state=SEED, n_jobs=-1, verbosity=-1,
+            random_state=SEED, n_jobs=1, verbosity=-1,
         )
     except ImportError:
         pass
@@ -85,7 +85,7 @@ def get_regression_models(quick: bool = False) -> dict:
         from lightgbm import LGBMRegressor
         models["LightGBM"] = lambda: LGBMRegressor(
             n_estimators=300, max_depth=6, learning_rate=0.05,
-            random_state=SEED, n_jobs=-1, verbosity=-1,
+            random_state=SEED, n_jobs=1, verbosity=-1,
         )
     except ImportError:
         pass
