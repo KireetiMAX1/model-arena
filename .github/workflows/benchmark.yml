@@ -1,0 +1,92 @@
+name: 🏆 Benchmark Suite
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "requirements.txt"
+      - ".github/workflows/benchmark.yml"
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: "0 6 * * 1"   # every Monday 6am UTC
+  workflow_dispatch:
+    inputs:
+      dataset:
+        description: "Dataset to benchmark"
+        required: false
+        default: "breast_cancer"
+        type: choice
+        options:
+          - breast_cancer
+          - wine
+          - iris
+          - diabetes
+          - digits
+          - all
+
+permissions:
+  contents: write   # allow committing back to repo
+
+jobs:
+  test:
+    name: 🧪 Unit Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: pytest tests/ -v
+
+  benchmark:
+    name: 🏆 Run Benchmark & Update README
+    runs-on: ubuntu-latest
+    needs: test
+    if: github.event_name != 'pull_request'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Run benchmark
+        run: |
+          DATASET="${{ github.event.inputs.dataset || 'breast_cancer' }}"
+          cd $GITHUB_WORKSPACE
+          if [ "$DATASET" = "all" ]; then
+            python src/run_benchmark.py --all
+          else
+            python src/run_benchmark.py --dataset "$DATASET"
+          fi
+
+      - name: Commit results back to repo
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md results/ assets/
+          if git diff --staged --quiet; then
+            echo "✅ No changes to commit"
+          else
+            git commit -m "🤖 Update benchmark results [skip ci]"
+            git push
+            echo "✅ Results committed to main"
+          fi
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: benchmark-results
+          path: |
+            results/
+            assets/
