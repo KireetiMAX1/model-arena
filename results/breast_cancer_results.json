@@ -1,0 +1,145 @@
+{
+  "metadata": {
+    "dataset": "breast_cancer",
+    "task": "classification",
+    "n_train": 455,
+    "n_test": 114,
+    "n_features": 30,
+    "timestamp": "2026-05-21 01:10:03 UTC",
+    "git_sha": "7ecf906"
+  },
+  "results": [
+    {
+      "model": "Logistic Regression",
+      "cv_roc_auc_mean": 0.9957,
+      "cv_roc_auc_std": 0.0048,
+      "test_accuracy": 0.9825,
+      "test_f1": 0.9861,
+      "test_precision": 0.9861,
+      "test_recall": 0.9861,
+      "test_roc_auc": 0.9954,
+      "test_avg_precision": 0.9971,
+      "train_time_sec": 1.84
+    },
+    {
+      "model": "Decision Tree",
+      "cv_roc_auc_mean": 0.9179,
+      "cv_roc_auc_std": 0.0201,
+      "test_accuracy": 0.9123,
+      "test_f1": 0.9286,
+      "test_precision": 0.9559,
+      "test_recall": 0.9028,
+      "test_roc_auc": 0.9157,
+      "test_avg_precision": 0.9244,
+      "train_time_sec": 0.11
+    },
+    {
+      "model": "Random Forest",
+      "cv_roc_auc_mean": 0.9894,
+      "cv_roc_auc_std": 0.0086,
+      "test_accuracy": 0.9561,
+      "test_f1": 0.9655,
+      "test_precision": 0.9589,
+      "test_recall": 0.9722,
+      "test_roc_auc": 0.9932,
+      "test_avg_precision": 0.996,
+      "train_time_sec": 1.18
+    },
+    {
+      "model": "Gradient Boosting",
+      "cv_roc_auc_mean": 0.9633,
+      "cv_roc_auc_std": 0.0328,
+      "test_accuracy": 0.9474,
+      "test_f1": 0.9583,
+      "test_precision": 0.9583,
+      "test_recall": 0.9583,
+      "test_roc_auc": 0.9891,
+      "test_avg_precision": 0.9935,
+      "train_time_sec": 3.19
+    },
+    {
+      "model": "Extra Trees",
+      "cv_roc_auc_mean": 0.9942,
+      "cv_roc_auc_std": 0.0041,
+      "test_accuracy": 0.9561,
+      "test_f1": 0.9655,
+      "test_precision": 0.9589,
+      "test_recall": 0.9722,
+      "test_roc_auc": 0.9919,
+      "test_avg_precision": 0.995,
+      "train_time_sec": 0.91
+    },
+    {
+      "model": "K-Nearest Neighbors",
+      "cv_roc_auc_mean": 0.9879,
+      "cv_roc_auc_std": 0.0081,
+      "test_accuracy": 0.9561,
+      "test_f1": 0.9655,
+      "test_precision": 0.9589,
+      "test_recall": 0.9722,
+      "test_roc_auc": 0.9788,
+      "test_avg_precision": 0.9773,
+      "train_time_sec": 0.08
+    },
+    {
+      "model": "Naive Bayes",
+      "cv_roc_auc_mean": 0.9884,
+      "cv_roc_auc_std": 0.0075,
+      "test_accuracy": 0.9298,
+      "test_f1": 0.9444,
+      "test_precision": 0.9444,
+      "test_recall": 0.9444,
+      "test_roc_auc": 0.9868,
+      "test_avg_precision": 0.9922,
+      "train_time_sec": 0.03
+    },
+    {
+      "model": "SVM (RBF)",
+      "cv_roc_auc_mean": 0.9957,
+      "cv_roc_auc_std": 0.0048,
+      "test_accuracy": 0.9825,
+      "test_f1": 0.9861,
+      "test_precision": 0.9861,
+      "test_recall": 0.9861,
+      "test_roc_auc": 0.995,
+      "test_avg_precision": 0.9969,
+      "train_time_sec": 0.06
+    },
+    {
+      "model": "Neural Network",
+      "cv_roc_auc_mean": 0.995,
+      "cv_roc_auc_std": 0.0048,
+      "test_accuracy": 0.9649,
+      "test_f1": 0.9718,
+      "test_precision": 0.9857,
+      "test_recall": 0.9583,
+      "test_roc_auc": 0.9937,
+      "test_avg_precision": 0.9958,
+      "train_time_sec": 0.78
+    },
+    {
+      "model": "XGBoost",
+      "cv_roc_auc_mean": 0.9924,
+      "cv_roc_auc_std": 0.0054,
+      "test_accuracy": 0.9474,
+      "test_f1": 0.9589,
+      "test_precision": 0.9459,
+      "test_recall": 0.9722,
+      "test_roc_auc": 0.9927,
+      "test_avg_precision": 0.9958,
+      "train_time_sec": 0.66
+    },
+    {
+      "model": "LightGBM",
+      "cv_roc_auc_mean": 0.9922,
+      "cv_roc_auc_std": 0.0053,
+      "test_accuracy": 0.9561,
+      "test_f1": 0.9655,
+      "test_precision": 0.9589,
+      "test_recall": 0.9722,
+      "test_roc_auc": 0.9894,
+      "test_avg_precision": 0.993,
+      "train_time_sec": 0.76
+    }
+  ]
+}
