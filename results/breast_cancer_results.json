@@ -5,8 +5,8 @@
     "n_train": 455,
     "n_test": 114,
     "n_features": 30,
-    "timestamp": "2026-05-25 07:52:20 UTC",
-    "git_sha": "0917d0c"
+    "timestamp": "2026-06-01 08:07:54 UTC",
+    "git_sha": "878aa2a"
   },
   "results": [
     {
@@ -19,7 +19,7 @@
       "test_recall": 0.9861,
       "test_roc_auc": 0.9954,
       "test_avg_precision": 0.9971,
-      "train_time_sec": 1.72
+      "train_time_sec": 1.71
     },
     {
       "model": "Decision Tree",
@@ -43,7 +43,7 @@
       "test_recall": 0.9722,
       "test_roc_auc": 0.9932,
       "test_avg_precision": 0.996,
-      "train_time_sec": 1.11
+      "train_time_sec": 1.12
     },
     {
       "model": "Gradient Boosting",
@@ -55,7 +55,7 @@
       "test_recall": 0.9583,
       "test_roc_auc": 0.9891,
       "test_avg_precision": 0.9935,
-      "train_time_sec": 3.29
+      "train_time_sec": 3.24
     },
     {
       "model": "Extra Trees",
@@ -115,7 +115,7 @@
       "test_recall": 0.9583,
       "test_roc_auc": 0.9937,
       "test_avg_precision": 0.9958,
-      "train_time_sec": 0.71
+      "train_time_sec": 0.7
     },
     {
       "model": "XGBoost",
@@ -127,7 +127,7 @@
       "test_recall": 0.9722,
       "test_roc_auc": 0.9927,
       "test_avg_precision": 0.9958,
-      "train_time_sec": 0.69
+      "train_time_sec": 0.68
     },
     {
       "model": "LightGBM",
