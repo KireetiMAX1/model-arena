@@ -5,8 +5,8 @@
     "n_train": 455,
     "n_test": 114,
     "n_features": 30,
-    "timestamp": "2026-08-17 07:08:32 UTC",
-    "git_sha": "38cf1ff"
+    "timestamp": "2026-08-24 07:11:47 UTC",
+    "git_sha": "be9e00f"
   },
   "results": [
     {
@@ -31,7 +31,7 @@
       "test_recall": 0.9028,
       "test_roc_auc": 0.9157,
       "test_avg_precision": 0.9244,
-      "train_time_sec": 0.11
+      "train_time_sec": 0.12
     },
     {
       "model": "Random Forest",
@@ -43,7 +43,7 @@
       "test_recall": 0.9722,
       "test_roc_auc": 0.9932,
       "test_avg_precision": 0.996,
-      "train_time_sec": 1.24
+      "train_time_sec": 1.22
     },
     {
       "model": "Gradient Boosting",
@@ -55,7 +55,7 @@
       "test_recall": 0.9583,
       "test_roc_auc": 0.9884,
       "test_avg_precision": 0.9931,
-      "train_time_sec": 2.73
+      "train_time_sec": 2.95
     },
     {
       "model": "Extra Trees",
@@ -67,7 +67,7 @@
       "test_recall": 0.9722,
       "test_roc_auc": 0.9919,
       "test_avg_precision": 0.995,
-      "train_time_sec": 0.96
+      "train_time_sec": 0.92
     },
     {
       "model": "K-Nearest Neighbors",
@@ -79,7 +79,7 @@
       "test_recall": 0.9722,
       "test_roc_auc": 0.9788,
       "test_avg_precision": 0.9773,
-      "train_time_sec": 0.07
+      "train_time_sec": 0.08
     },
     {
       "model": "Naive Bayes",
@@ -115,7 +115,7 @@
       "test_recall": 0.9583,
       "test_roc_auc": 0.9937,
       "test_avg_precision": 0.9958,
-      "train_time_sec": 0.97
+      "train_time_sec": 0.86
     },
     {
       "model": "XGBoost",
@@ -127,7 +127,7 @@
       "test_recall": 0.9722,
       "test_roc_auc": 0.9927,
       "test_avg_precision": 0.9958,
-      "train_time_sec": 0.6
+      "train_time_sec": 0.67
     },
     {
       "model": "LightGBM",
@@ -139,7 +139,7 @@
       "test_recall": 0.9722,
       "test_roc_auc": 0.9894,
       "test_avg_precision": 0.993,
-      "train_time_sec": 0.62
+      "train_time_sec": 0.76
     }
   ]
 }
