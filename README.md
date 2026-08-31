@@ -13,21 +13,21 @@ A self-contained ML benchmarking framework that runs entirely inside **GitHub Ac
 ## 🏆 Leaderboard — Breast Cancer
 
 **Task**: classification | **Train**: 455 | **Test**: 114 | **Features**: 30
-**Updated**: 2026-08-24 07:11:47 UTC (commit `be9e00f`)
+**Updated**: 2026-08-31 13:23:02 UTC (commit `4658a80`)
 
 | Rank | Model | Accuracy | F1 | ROC-AUC | CV ROC-AUC | Time (s) |
 |---|---|---|---|---|---|---|
-| 🥇 | **Logistic Regression** | 0.9825 | 0.9861 | 0.9954 | 0.9957 | 1.7600 |
+| 🥇 | **Logistic Regression** | 0.9825 | 0.9861 | 0.9954 | 0.9957 | 1.8300 |
 | 🥈 | SVM (RBF) | 0.9825 | 0.9861 | 0.9950 | 0.9957 | 0.0700 |
-| 🥉 | Neural Network | 0.9649 | 0.9718 | 0.9937 | 0.9950 | 0.8600 |
-| 4 | Random Forest | 0.9561 | 0.9655 | 0.9932 | 0.9894 | 1.2200 |
-| 5 | XGBoost | 0.9474 | 0.9589 | 0.9927 | 0.9924 | 0.6700 |
+| 🥉 | Neural Network | 0.9649 | 0.9718 | 0.9937 | 0.9950 | 0.8100 |
+| 4 | Random Forest | 0.9561 | 0.9655 | 0.9932 | 0.9894 | 1.2000 |
+| 5 | XGBoost | 0.9474 | 0.9589 | 0.9927 | 0.9924 | 0.6800 |
 | 6 | Extra Trees | 0.9561 | 0.9655 | 0.9919 | 0.9942 | 0.9200 |
-| 7 | LightGBM | 0.9561 | 0.9655 | 0.9894 | 0.9922 | 0.7600 |
-| 8 | Gradient Boosting | 0.9474 | 0.9583 | 0.9884 | 0.9631 | 2.9500 |
+| 7 | LightGBM | 0.9561 | 0.9655 | 0.9894 | 0.9922 | 0.7500 |
+| 8 | Gradient Boosting | 0.9474 | 0.9583 | 0.9884 | 0.9631 | 2.9600 |
 | 9 | Naive Bayes | 0.9298 | 0.9444 | 0.9868 | 0.9884 | 0.0300 |
 | 10 | K-Nearest Neighbors | 0.9561 | 0.9655 | 0.9788 | 0.9879 | 0.0800 |
-| 11 | Decision Tree | 0.9123 | 0.9286 | 0.9157 | 0.9179 | 0.1200 |
+| 11 | Decision Tree | 0.9123 | 0.9286 | 0.9157 | 0.9179 | 0.1100 |
 
 _Primary metric: **test_roc_auc** · Best model wins 🥇_
 
