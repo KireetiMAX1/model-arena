@@ -5,8 +5,8 @@
     "n_train": 455,
     "n_test": 114,
     "n_features": 30,
-    "timestamp": "2026-08-31 13:23:02 UTC",
-    "git_sha": "4658a80"
+    "timestamp": "2026-09-07 12:12:44 UTC",
+    "git_sha": "7dabd95"
   },
   "results": [
     {
@@ -19,7 +19,7 @@
       "test_recall": 0.9861,
       "test_roc_auc": 0.9954,
       "test_avg_precision": 0.9971,
-      "train_time_sec": 1.83
+      "train_time_sec": 1.43
     },
     {
       "model": "Decision Tree",
@@ -31,7 +31,7 @@
       "test_recall": 0.9028,
       "test_roc_auc": 0.9157,
       "test_avg_precision": 0.9244,
-      "train_time_sec": 0.11
+      "train_time_sec": 0.09
     },
     {
       "model": "Random Forest",
@@ -43,7 +43,7 @@
       "test_recall": 0.9722,
       "test_roc_auc": 0.9932,
       "test_avg_precision": 0.996,
-      "train_time_sec": 1.2
+      "train_time_sec": 0.95
     },
     {
       "model": "Gradient Boosting",
@@ -55,7 +55,7 @@
       "test_recall": 0.9583,
       "test_roc_auc": 0.9884,
       "test_avg_precision": 0.9931,
-      "train_time_sec": 2.96
+      "train_time_sec": 2.29
     },
     {
       "model": "Extra Trees",
@@ -67,7 +67,7 @@
       "test_recall": 0.9722,
       "test_roc_auc": 0.9919,
       "test_avg_precision": 0.995,
-      "train_time_sec": 0.92
+      "train_time_sec": 0.75
     },
     {
       "model": "K-Nearest Neighbors",
@@ -79,7 +79,7 @@
       "test_recall": 0.9722,
       "test_roc_auc": 0.9788,
       "test_avg_precision": 0.9773,
-      "train_time_sec": 0.08
+      "train_time_sec": 0.26
     },
     {
       "model": "Naive Bayes",
@@ -103,7 +103,7 @@
       "test_recall": 0.9861,
       "test_roc_auc": 0.995,
       "test_avg_precision": 0.9969,
-      "train_time_sec": 0.07
+      "train_time_sec": 0.05
     },
     {
       "model": "Neural Network",
@@ -115,7 +115,7 @@
       "test_recall": 0.9583,
       "test_roc_auc": 0.9937,
       "test_avg_precision": 0.9958,
-      "train_time_sec": 0.81
+      "train_time_sec": 0.58
     },
     {
       "model": "XGBoost",
@@ -127,7 +127,7 @@
       "test_recall": 0.9722,
       "test_roc_auc": 0.9927,
       "test_avg_precision": 0.9958,
-      "train_time_sec": 0.68
+      "train_time_sec": 0.52
     },
     {
       "model": "LightGBM",
@@ -139,7 +139,7 @@
       "test_recall": 0.9722,
       "test_roc_auc": 0.9894,
       "test_avg_precision": 0.993,
-      "train_time_sec": 0.75
+      "train_time_sec": 0.55
     }
   ]
 }
