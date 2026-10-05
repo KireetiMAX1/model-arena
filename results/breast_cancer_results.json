@@ -5,8 +5,8 @@
     "n_train": 455,
     "n_test": 114,
     "n_features": 30,
-    "timestamp": "2026-09-28 13:34:30 UTC",
-    "git_sha": "cd5e200"
+    "timestamp": "2026-10-05 14:18:31 UTC",
+    "git_sha": "fe5a03c"
   },
   "results": [
     {
@@ -19,7 +19,7 @@
       "test_recall": 0.9861,
       "test_roc_auc": 0.9954,
       "test_avg_precision": 0.9971,
-      "train_time_sec": 1.95
+      "train_time_sec": 1.86
     },
     {
       "model": "Decision Tree",
@@ -31,7 +31,7 @@
       "test_recall": 0.9028,
       "test_roc_auc": 0.9157,
       "test_avg_precision": 0.9244,
-      "train_time_sec": 0.13
+      "train_time_sec": 0.11
     },
     {
       "model": "Random Forest",
@@ -55,7 +55,7 @@
       "test_recall": 0.9583,
       "test_roc_auc": 0.9884,
       "test_avg_precision": 0.9931,
-      "train_time_sec": 2.96
+      "train_time_sec": 2.91
     },
     {
       "model": "Extra Trees",
@@ -67,7 +67,7 @@
       "test_recall": 0.9722,
       "test_roc_auc": 0.9919,
       "test_avg_precision": 0.995,
-      "train_time_sec": 1.06
+      "train_time_sec": 1.0
     },
     {
       "model": "K-Nearest Neighbors",
@@ -115,7 +115,7 @@
       "test_recall": 0.9583,
       "test_roc_auc": 0.9937,
       "test_avg_precision": 0.9958,
-      "train_time_sec": 0.93
+      "train_time_sec": 0.92
     },
     {
       "model": "XGBoost",
