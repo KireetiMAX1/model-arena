@@ -5,8 +5,8 @@
     "n_train": 455,
     "n_test": 114,
     "n_features": 30,
-    "timestamp": "2026-10-19 12:49:34 UTC",
-    "git_sha": "b9bbc02"
+    "timestamp": "2026-10-26 12:42:50 UTC",
+    "git_sha": "437281b"
   },
   "results": [
     {
@@ -19,7 +19,7 @@
       "test_recall": 0.9861,
       "test_roc_auc": 0.9954,
       "test_avg_precision": 0.9971,
-      "train_time_sec": 1.95
+      "train_time_sec": 2.0
     },
     {
       "model": "Decision Tree",
@@ -31,7 +31,7 @@
       "test_recall": 0.9028,
       "test_roc_auc": 0.9157,
       "test_avg_precision": 0.9244,
-      "train_time_sec": 0.12
+      "train_time_sec": 0.11
     },
     {
       "model": "Random Forest",
@@ -43,7 +43,7 @@
       "test_recall": 0.9722,
       "test_roc_auc": 0.9932,
       "test_avg_precision": 0.996,
-      "train_time_sec": 1.35
+      "train_time_sec": 1.32
     },
     {
       "model": "Gradient Boosting",
@@ -55,7 +55,7 @@
       "test_recall": 0.9583,
       "test_roc_auc": 0.9884,
       "test_avg_precision": 0.9931,
-      "train_time_sec": 2.95
+      "train_time_sec": 2.97
     },
     {
       "model": "Extra Trees",
@@ -67,7 +67,7 @@
       "test_recall": 0.9722,
       "test_roc_auc": 0.9919,
       "test_avg_precision": 0.995,
-      "train_time_sec": 1.03
+      "train_time_sec": 1.05
     },
     {
       "model": "K-Nearest Neighbors",
@@ -115,7 +115,7 @@
       "test_recall": 0.9583,
       "test_roc_auc": 0.9937,
       "test_avg_precision": 0.9958,
-      "train_time_sec": 0.94
+      "train_time_sec": 0.95
     },
     {
       "model": "XGBoost",
